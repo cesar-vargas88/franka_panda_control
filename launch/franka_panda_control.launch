@@ -9,7 +9,7 @@
         type="spawner" 
         respawn="false"
         output="screen" 
-        ns="franka_robot"
+        ns="/panda"
         args=  "joint_state_controller
                 joint1_position_controller
                 joint2_position_controller
@@ -25,7 +25,7 @@
         type="robot_state_publisher"
         respawn="false" 
         output="screen">
-        <remap from="/joint_states" to="/franka_panda/joint_states" />
+        <remap from="/joint_states" to="/panda/joint_states" />
     </node>
 
 </launch>
